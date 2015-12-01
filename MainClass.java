@@ -1,13 +1,10 @@
 import java.io.IOException;
 
-import DynamicProgramming.Levenshtein;
-
-
 public class MainClass {
 	
-	public static void main(String args[]) throws IOException, EmptyTreeException{
+	public static void main(String args[]) throws IOException{
 		
-		Levenshtein p = new Levenshtein("Carthorse", "Orchestra");
+		Levenshtein p = new Levenshtein("Aviral", "viral");
 		
 		
 		
