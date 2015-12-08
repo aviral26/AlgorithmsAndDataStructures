@@ -4,32 +4,35 @@ public class MainClass {
 
 	public static void main(String args[]) throws IOException{
 		
-		Trie t = new Trie();
-		t.addWord("aviral");
-		t.addWord("aviral");
-		t.addWord("aviral");
-		t.addWord("aviral");
-		t.addWord("aviral");
-		t.addWord("aviral");
-		t.addWord("studies");
-		t.addWord("studies");
-		t.addWord("studies");
-		t.addWord("studies");
-		t.addWord("avi");
-		t.addWord("avira");
-		t.addWord("study");
-		t.addWord("study");
-		t.addWord("study");
-		t.addWord("avi");
-		System.out.println("Total number of words in dictionary are " + t.getWords());
-		System.out.println("prefix count of \"avi\" is " + t.getPrefixCount("avi"));
-		System.out.println("prefix count of \"study\" is " + t.getPrefixCount("study"));
-		System.out.println("prefix count of \"stud\" is " + t.getPrefixCount("stud"));
-		System.out.println("word count of \"aviral\" is " + t.getWordCount("aviral"));
-		System.out.println("word count of \"avira\" is " + t.getWordCount("avira"));
-		System.out.println("word count of \"avi\" is " + t.getWordCount("avi"));
-		System.out.println("word count of \"studies\" is " + t.getWordCount("studies"));
-		System.out.println("word count of \"study\" is " + t.getWordCount("study"));
+		int[][] A = {{1,1,1,0,0,1},{1,1,0,0,1,0},{0,0,0,0,1,1}};
+		NumberOfIslands n = new NumberOfIslands(A);
+
+		// Trie t = new Trie();
+		// t.addWord("aviral");
+		// t.addWord("aviral");
+		// t.addWord("aviral");
+		// t.addWord("aviral");
+		// t.addWord("aviral");
+		// t.addWord("aviral");
+		// t.addWord("studies");
+		// t.addWord("studies");
+		// t.addWord("studies");
+		// t.addWord("studies");
+		// t.addWord("avi");
+		// t.addWord("avira");
+		// t.addWord("study");
+		// t.addWord("study");
+		// t.addWord("study");
+		// t.addWord("avi");
+		// System.out.println("Total number of words in dictionary are " + t.getWords());
+		// System.out.println("prefix count of \"avi\" is " + t.getPrefixCount("avi"));
+		// System.out.println("prefix count of \"study\" is " + t.getPrefixCount("study"));
+		// System.out.println("prefix count of \"stud\" is " + t.getPrefixCount("stud"));
+		// System.out.println("word count of \"aviral\" is " + t.getWordCount("aviral"));
+		// System.out.println("word count of \"avira\" is " + t.getWordCount("avira"));
+		// System.out.println("word count of \"avi\" is " + t.getWordCount("avi"));
+		// System.out.println("word count of \"studies\" is " + t.getWordCount("studies"));
+		// System.out.println("word count of \"study\" is " + t.getWordCount("study"));
 
 
 		// Node root = new Node(20);
