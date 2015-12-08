@@ -1,10 +1,46 @@
 import java.io.IOException;
 
 public class MainClass {
-	
+
 	public static void main(String args[]) throws IOException{
 		
-		Levenshtein p = new Levenshtein("Aviral", "viral");
+		Trie t = new Trie();
+		t.addWord("aviral");
+		t.addWord("aviral");
+		t.addWord("aviral");
+		t.addWord("aviral");
+		t.addWord("aviral");
+		t.addWord("aviral");
+		t.addWord("studies");
+		t.addWord("studies");
+		t.addWord("studies");
+		t.addWord("studies");
+		t.addWord("avi");
+		t.addWord("avira");
+		t.addWord("study");
+		t.addWord("study");
+		t.addWord("study");
+		t.addWord("avi");
+		System.out.println("Total number of words in dictionary are " + t.getWords());
+		System.out.println("prefix count of \"avi\" is " + t.getPrefixCount("avi"));
+		System.out.println("prefix count of \"study\" is " + t.getPrefixCount("study"));
+		System.out.println("prefix count of \"stud\" is " + t.getPrefixCount("stud"));
+		System.out.println("word count of \"aviral\" is " + t.getWordCount("aviral"));
+		System.out.println("word count of \"avira\" is " + t.getWordCount("avira"));
+		System.out.println("word count of \"avi\" is " + t.getWordCount("avi"));
+		System.out.println("word count of \"studies\" is " + t.getWordCount("studies"));
+		System.out.println("word count of \"study\" is " + t.getWordCount("study"));
+
+
+		// Node root = new Node(20);
+		// root.setLeft(new Node(8));
+		// root.setRight(new Node(22));
+		// root.left.setLeft(new Node(4));
+		// root.left.setRight(new Node(12));
+		// root.left.right.setLeft(new Node(10));
+		// root.left.right.setRight(new Node(14));
+	
+		// PrintNodeAtDistanceK p = new PrintNodeAtDistanceK(root, 2, 12);
 		
 		
 		
