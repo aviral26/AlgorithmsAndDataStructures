@@ -1,11 +1,24 @@
 import java.io.IOException;
 
 public class MainClass {
-
+	//static StringBuilder str = new StringBuilder();
 	public static void main(String args[]) throws IOException{
 		
-		int[][] A = {{1,1,1,0,0,1},{1,1,0,0,1,0},{0,0,0,0,1,1}};
-		NumberOfIslands n = new NumberOfIslands(A);
+		palindromeSubstring p = new palindromeSubstring("hidefedihay");
+		//generateParens(4);
+
+		// Node head = new Node(1);
+		// head.next = new Node(2);
+		// head.next.next = new Node(3);
+		// head.next.next.next = new Node(4);
+		// head.next.next.next.next = new Node(5);
+		// head.next.next.next.next.next = new Node(6);
+		// head.next.next.next.next.next.next = new Node(7);
+
+		// ReverseQKAtATime r = new ReverseQKAtATime(head, 2);
+
+		// int[][] A = {{1,1,1,0,0,1},{1,1,0,0,1,0},{0,0,0,0,1,1}};
+		// NumberOfIslands n = new NumberOfIslands(A);
 
 		// Trie t = new Trie();
 		// t.addWord("aviral");
@@ -86,4 +99,22 @@ public class MainClass {
 		System.out.println();
 		myTree.printInOrder(myTree.head);*/
 	}
+
+	// static void generateParens(int k){
+	// 	String s = "";
+	// 	generateParensOf(s, k, 0, 0);
+	// }
+	// static void generateParensOf(String s, int k, int open, int close){
+	// 	if(close == k){
+	// 		System.out.println(s);
+	// 	}
+	// 	else{
+	// 		if(open > close){
+	// 			generateParensOf(s + " } ", k , open, close + 1);
+	// 		}
+	// 		if(open < k){
+	// 			generateParensOf(s + " { ", k , open + 1, close);	
+	// 		}
+	// 	}
+	// }
 }

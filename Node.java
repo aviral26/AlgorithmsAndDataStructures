@@ -1,18 +1,16 @@
 public class Node {
-	int val;
-	Node left;
-	Node right;
+	public int value;
+	public Node next;
 	
 	public Node(int item){
-		this.val = item;
-		left = null;
-		right = null;
+		this.value = item;
+		next = null;
 	}
 
-	public void setLeft(Node t){
-		left = t;
-	}
-	public void setRight(Node t){
-		right = t;
-	}
+	// public void setLeft(Node t){
+	// 	left = t;
+	// }
+	// public void setRight(Node t){
+	// 	right = t;
+	// }
 }

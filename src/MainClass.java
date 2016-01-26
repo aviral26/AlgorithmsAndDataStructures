@@ -1,13 +1,14 @@
 import java.io.IOException;
 
-import DynamicProgramming.Levenshtein;
+import DynamicProgramming.Knapsack;
 
 
 public class MainClass {
 	
-	public static void main(String args[]) throws IOException, EmptyTreeException{
-		
-		Levenshtein p = new Levenshtein("Carthorse", "Orchestra");
+	public static void main(String args[]) throws IOException{ //EmptyTreeException{
+		int[] a = {4, 6, 3, 7, 8};
+		int[] b = {10, 2, 34, 12, 15};
+		Knapsack p = new Knapsack(25, a, b, 5);
 		
 		
 		
