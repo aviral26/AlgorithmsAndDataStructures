@@ -4,7 +4,13 @@ public class MainClass {
 	//static StringBuilder str = new StringBuilder();
 	public static void main(String args[]) throws IOException{
 		
-		palindromeSubstring p = new palindromeSubstring("hidefedihay");
+		pTree head = new pTree(3,null,null,null);
+		head.left = new pTree(1,null,null,head);
+		head.left.right = new pTree(2,null,null,head.left);
+		head.right = new pTree(5,null,null,head);
+		head.right.left = new pTree(4,null,null,head.right);
+		IterativeInOrder i = new IterativeInOrder(head);
+		//palindromeSubstring p = new palindromeSubstring("hidefedihay");
 		//generateParens(4);
 
 		// Node head = new Node(1);

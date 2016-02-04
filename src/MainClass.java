@@ -6,9 +6,11 @@ import DynamicProgramming.Knapsack;
 public class MainClass {
 	
 	public static void main(String args[]) throws IOException{ //EmptyTreeException{
-		int[] a = {4, 6, 3, 7, 8};
+		int[] a = {-1,0,1,3,5,6,7,9};
 		int[] b = {10, 2, 34, 12, 15};
-		Knapsack p = new Knapsack(25, a, b, 5);
+
+		ValuePos p = new ValuePos(a);
+		// Knapsack p = new Knapsack(25, a, b, 5);
 		
 		
 		
